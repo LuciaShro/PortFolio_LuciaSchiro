@@ -411,6 +411,7 @@ a{
     box-shadow: 0 0 15px rgba(155, 87, 251, 0.884), 0 0 25px rgba(152, 87, 243, 0.5);
     border: none;
     outline: none;
+    margin-left: 7%;
 }
 
 .boton-enviar{
