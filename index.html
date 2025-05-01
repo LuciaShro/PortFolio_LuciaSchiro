@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Lucia Schiro</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+               <ul>
+                <a href="#Presentacion">Inicio</a>
+                <a href="#Sobre-mi">Sobre mí</a>
+                <a href="#Proyectos">Proyectos</a>
+                <a href="#Tecnologias">Tecnologías</a>
+                <a href="#Contacto">Contacto</a>
+                </ul> 
+            </nav>
+            <div id="boton-cv">
+                <button onclick="location.href='Archivos/CV-LuciaSchiro.pdf'" download>Currículum</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="Presentacion">
+            <div id="text-presentacion">
+               <h1>¡Hola! Soy Lucia</h1>
+                <h2>Desarrolladora Backend</h2>
+                <p>
+                Estudiante de programación en la UTN, apasionada por la tecnología y el desarrollo de software.
+                Actualmente curso el segundo año, donde estoy aprendiendo C# y profundizando mis conocimientos en base de datos, 
+                tanto relacionales como no relacionales. Aprendí a programar con C++, lo que me permitió desarrollar una base sólida en lógica y pensamiento algorítmico. 
+                Me defino como una persona proactiva, decidida y responsable. Disfruto resolver problemas, trabajar en equipo, proponer ideas y asumir nuevos desafios que me impulsen a 
+                seguir aprendiendo y creciendo día a día.
+                </p>
+                <div class="box-redes">
+                    <a href="https://www.linkedin.com/in/lucia-schiro-23b56b236/" target="_blank">
+                        <img src="./Imagenes/iconoLinkedin.png" alt="LinkedIn" width="40" height="40">
+                    </a>
+                    <a id="img2" href="https://github.com/LuciaShro" target="_blank">
+                        <img src="./Imagenes/iconoGitHub.png" alt="GitHub" width="40" height="40">
+                    </a>
+                </div>
+            </div>
+            <div id="Img">
+                <img src="Imagenes/LuciaEmoji.png" alt="ImagenAvatar">
+            </div>
+        </div>
+
+        <div id="Sobre-mi">
+            <h1>Sobre mi</h1>
+            <div id="Img-me">
+                <img src="Imagenes/imagen_avatar.png" alt="ImagenAvatar">
+            </div>
+            <div id="text-sobre-mi-titulo">
+                <div class="txt-sobre-mi">
+                <p>
+                    Soy estudiante de la Tecnicatura Universitaria en Programación en la UTN, apasionada por la tecnología y el desarrollo de software. Desde que comencé a aprender sobre desarrollo por videos de youtube, descubrí mi interés por la programación, y desde entonces busque constantemente mejorar mis habilidades y explorar nuevas tecnologías. 
+                    Actualmente, me encuentro aprendiendo C# y profundizando mis conocimientos en bases de datos.
+                    Me gusta trabajar en proyectos que me desafíen y me permitan seguir creciendo. Disfruto colaborar en equipo, encontrar soluciones a problemas complejos y siempre estoy en busca de nuevas oportunidades para aprender. 
+                    En el futuro, me gustaría seguir desarrollándome en el ámbito del backend y explorar más sobre inteligencia artificial y desarrollo web.
+                </p>
+                </div>
+                <div class="txt sobre mi">
+                    <h3>Conocimientos técnicos:</h3>
+                    <li>Desarrollo en C# y C++</li>
+                    <li>Diseño y gestión de base de datos</li>
+                    <li>Logica de programación y algoritmos</li>
+                </div>
+                <div class="txt sobre mi">
+                    <p>
+                        Mi objetivo es seguir perfeccionando mis conocimientos y adquirir experiencia en proyectos reales. 
+                        Espero contribuir a equipos de desarrollo que estén comprometidos con la innovación y el aprendizaje continuo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Proyectos">
+            <div id="tituloSeccion">
+                <h1>Proyectos</h1>
+            </div>   
+                <div class="fila-intermedia">
+                    <div class="tarjeta">
+                        <div class="icono">
+                            <img src="./Imagenes/data-storage-2-56 (1).png" alt="Imagen">
+                        </div>
+                        <div class="contenido">
+                            <h2>Aplicación de gestión de artículos</h2>
+                            <p>En equipo con compañeros de la facultad, desarrollamos una aplicación de gestión de artículos para el catálogo de un comercio, utilizando WinForms en C# con el framework .NET.</p>
+                            <a href="https://github.com/LuciaShro/tp-winform-equipo-3B" class="boton">VER MÁS</a>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta">
+                        <div class="icono">
+                            <img src="./Imagenes/checklist-59.png" alt="Imagen">
+                        </div>
+                        <div class="contenido">
+                            <h2>Sistema de gestión en consola</h2>
+                            <p>Junto a mi compañera de la facultad, desarrollamos un sistema de gestión en consola para la administración de artículos de un comercio, utilizando C++ con manejo de archivos.</p>
+                            <a href="https://github.com/LuciaShro/SistemadeGestionPrograII/tree/master" class="boton">VER MÁS</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tarjeta" style="width: 100%; max-width: 600px;">
+                    <div class="icono">
+                        <img src="./Imagenes/dado (1).png" alt="Imagen">
+                    </div>
+                    <div class="contenido">
+                        <h2>Juego Cien o Escalera</h2>
+                        <p>Junto a mi equipo de la facultad, desarrollé un juego de dados que permite jugar de a una o dos personas. El objetivo es alcanzar los cien puntos o lograr una escalera para ganar la partida.</p>
+                        <a href="https://github.com/julcontrerass/CienOEscaleraUTN" class="boton">VER MÁS</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="Cursos y Certificaciones">
+            <h1>Cursos</h1>
+            <div class="box curso"></div>
+            <div class="box curso"></div>
+        </div> -->
+
+        <div id="Tecnologias">
+            <div id="titulo-skills">
+                <h1>Tecnologias y Herramientas</h1>
+            </div>
+            <div id="skills-box">
+                <div class="skill">
+                    <img src="./Imagenes/image (2).png" alt="Icono C#">
+                </div>
+                <div class="skill">
+                    <img src="./Imagenes/image (7).png" alt="Icono C++">
+                </div>
+                <div class="skill">
+                    <img src="./Imagenes/image (3).png" alt="Icono SQL">
+                </div>
+                <div class="skill">
+                    <img src="./Imagenes/image (1).png" alt="Icono HTML">
+                </div>
+                <div class="skill">
+                    <img src="./Imagenes/image.png" alt="Icono CSS">
+                </div>
+                <div class="skill">
+                    <img src="./Imagenes/image (6).png" alt="Icono GitHub">
+                </div>
+            </div>
+        </div>
+
+        <div id="Contacto">
+            <h1>Contacto</h1>
+            <form class="form-contacto" onsubmit="mostrarMensaje(); return false;">
+                <div class="box-ingreso">
+                    <input type="text" id="boxNombre" placeholder="Nombre">
+                </div>
+                <div class="box-ingreso">
+                    <input type="email" id="boxEmail" placeholder="Email">
+                </div>
+                <div class="box-ingreso">
+                    <input type="tel" id="boxNumero" placeholder="Numero de telefono">
+                </div>
+                <div class="box-ingreso">
+                    <textarea placeholder="Mensaje" name="mensaje" required></textarea>  
+                </div>
+                <div id="btn-enviar">
+                    <button type="submit" class="boton-enviar">Enviar</button>
+                </div>
+            </form>
+
+            <div id="mensaje" class="mensaje"></div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
