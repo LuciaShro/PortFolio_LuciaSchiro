@@ -211,12 +211,11 @@ a{
 }
 
 .fila-intermedia{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    gap: 30px;
-    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas fijas */
+    gap: 30px; /* espacio entre tarjetas */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .tarjeta {
@@ -226,6 +225,9 @@ a{
     display: flex;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .icono {
@@ -270,6 +272,93 @@ a{
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.experiencia-laboral {
+    font-family: 'Inter';
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.experiencia-laboral h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  margin-top: 80px;
+}
+
+.exp-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  transition: transform 0.2s ease;
+  margin-top: 50px;
+}
+
+.exp-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.exp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.exp-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.exp-info {
+  flex-grow: 1;
+}
+
+.exp-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.puesto {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.fecha {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.exp-detalles {
+   margin-top: 15px;
+   padding-left: 20px;
+}
+
+.exp-detalles li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.columnas-flex {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.columnas-flex ul {
+    flex: 1;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.aptitudes-exp{
+    padding-left: 20px;
+}
+  
 #Tecnologias{
     display: flex;
     flex-direction: column;
@@ -282,7 +371,7 @@ a{
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
-    height: 300px;
+    height: 500px;
 }
 
 #titulo-skills{
@@ -293,6 +382,7 @@ a{
     padding: 20px 0;
     text-align: center;
     margin-bottom: 30px;
+    margin-top: -100px;
 }
 
 #titulo-skills h1{
@@ -310,6 +400,7 @@ a{
     height: 200px;
     gap: 30px;
     flex-wrap: wrap;
+    margin-top: 35px;
 }
 
 .skill{
@@ -323,6 +414,12 @@ a{
     border-radius: 50%;
     background: radial-gradient(circle at center, #312929 0%, #241336 60%, #0a0313 100%);
     box-shadow: 0 0 15px rgba(155, 87, 251, 0.884), 0 0 25px rgba(141, 73, 235, 0.5);
+    transition: transform 0.2s ease;
+}
+
+.skill:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(255, 199, 70, 0.3); 
 }
 
 .skill img{
@@ -355,6 +452,8 @@ a{
     height: 60px;
     align-self: center;
     margin-bottom: 30px;
+    margin-left: -20px;
+    font-size: 40px;
 }
 
 .form-contacto{
@@ -368,8 +467,8 @@ a{
 }
 
 .box-ingreso{
-    margin-bottom: 20px;
-    width: 100%;
+    margin-bottom: 40px;
+    width: 380PX;
 }
 
 .box-ingreso input{
@@ -408,10 +507,10 @@ a{
     width: 300px;
     border: 1px solid none;
     align-items: center;
-    box-shadow: 0 0 15px rgba(155, 87, 251, 0.884), 0 0 25px rgba(152, 87, 243, 0.5);
+    box-shadow: 0 0 15px rgba(59, 33, 95, 0.884), 0 0 25px rgba(152, 87, 243, 0.5);
     border: none;
     outline: none;
-    margin-left: 7%;
+    margin-left: 15%;
 }
 
 .boton-enviar{

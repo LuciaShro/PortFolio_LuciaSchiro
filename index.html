@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <header>
@@ -23,7 +24,7 @@
                 </ul> 
             </nav>
             <div id="boton-cv">
-                <button onclick="location.href='Archivos/CV-LuciaSchiro.pdf'" download>Currículum</button>
+                <button onclick="location.href='Archivos/CurriculumVitae-LuciaSchiro.pdf'" download>Currículum</button>
             </div>
         </div>
     </header>
@@ -62,10 +63,10 @@
             <div id="text-sobre-mi-titulo">
                 <div class="txt-sobre-mi">
                 <p>
-                    Soy estudiante de la Tecnicatura Universitaria en Programación en la UTN, apasionada por la tecnología y el desarrollo de software. Desde que comencé a aprender sobre desarrollo por videos de youtube, descubrí mi interés por la programación, y desde entonces busque constantemente mejorar mis habilidades y explorar nuevas tecnologías. 
+                    Me considero una persona comprometida, con iniciativa, y con muchas ganas de aportar en entornos donde se valore la colaboración y el aprendizaje constante. Desde que comencé a aprender sobre desarrollo por videos de youtube, descubrí mi interés por la programación, y desde entonces busque constantemente mejorar mis habilidades y explorar nuevas tecnologías. 
                     Actualmente, me encuentro aprendiendo C# y profundizando mis conocimientos en bases de datos.
                     Me gusta trabajar en proyectos que me desafíen y me permitan seguir creciendo. Disfruto colaborar en equipo, encontrar soluciones a problemas complejos y siempre estoy en busca de nuevas oportunidades para aprender. 
-                    En el futuro, me gustaría seguir desarrollándome en el ámbito del backend y explorar más sobre inteligencia artificial y desarrollo web.
+                    En el futuro, me gustaría seguir desarrollándome en el ámbito del backend y explorar más sobre la inteligencia artificial y el desarrollo de aplicaciones.
                 </p>
                 </div>
                 <div class="txt sobre mi">
@@ -93,6 +94,16 @@
                             <img src="./Imagenes/data-storage-2-56 (1).png" alt="Imagen">
                         </div>
                         <div class="contenido">
+                            <h2>Sistema Gestión de Logística</h2>
+                            <p>En equipo, desarrollamos un sistema para gestionar la logística de envíos. Permite registrar transportistas, generar órdenes, asignar rutas y hacer seguimiento de las entregas. Los clientes pueden ver el estado de sus envíos, los transportistas consultar sus órdenes, y el administrador controlar todo el proceso desde un panel central.</p>
+                            <a href="https://github.com/LuciaShro/TPI-SistemaDeLogistica-Equipo3B" class="boton">VER MÁS</a>
+                        </div>
+                    </div>
+                    <div class="tarjeta">
+                        <div class="icono">
+                            <img src="./Imagenes/data-storage-2-56 (1).png" alt="Imagen">
+                        </div>
+                        <div class="contenido">
                             <h2>Aplicación de gestión de artículos</h2>
                             <p>En equipo con compañeros de la facultad, desarrollamos una aplicación de gestión de artículos para el catálogo de un comercio, utilizando WinForms en C# con el framework .NET.</p>
                             <a href="https://github.com/LuciaShro/tp-winform-equipo-3B" class="boton">VER MÁS</a>
@@ -109,25 +120,56 @@
                             <a href="https://github.com/LuciaShro/SistemadeGestionPrograII/tree/master" class="boton">VER MÁS</a>
                         </div>
                     </div>
-                </div>
-                
-                <div class="tarjeta" style="width: 100%; max-width: 600px;">
-                    <div class="icono">
-                        <img src="./Imagenes/dado (1).png" alt="Imagen">
+
+                    <div class="tarjeta" style="width: 100%; max-width: 600px;">
+                        <div class="icono">
+                            <img src="./Imagenes/dado (1).png" alt="Imagen">
+                        </div>
+                        <div class="contenido">
+                            <h2>Juego Cien o Escalera</h2>
+                            <p>Junto a mi equipo de la facultad, desarrollé un juego de dados que permite jugar de a una o dos personas. El objetivo es alcanzar los cien puntos o lograr una escalera para ganar la partida.</p>
+                            <a href="https://github.com/julcontrerass/CienOEscaleraUTN" class="boton">VER MÁS</a>
+                        </div>
                     </div>
-                    <div class="contenido">
-                        <h2>Juego Cien o Escalera</h2>
-                        <p>Junto a mi equipo de la facultad, desarrollé un juego de dados que permite jugar de a una o dos personas. El objetivo es alcanzar los cien puntos o lograr una escalera para ganar la partida.</p>
-                        <a href="https://github.com/julcontrerass/CienOEscaleraUTN" class="boton">VER MÁS</a>
+                </div>
+        </div>
+
+        <section class="experiencia-laboral">
+            <h2>Experiencia laboral</h2>
+          
+            <div class="exp-item">
+                <div class="exp-header">
+                    <img src="Imagenes/argenpesos_logo.jpeg" alt="ArgenPesos">
+                    <div class="exp-info">
+                      <h3>ArgenPesos</h3>
+                      <p class="puesto">Project Manager</p>
+                    </div>
+                    <span class="fecha">Octubre 2024 - Actualidad</span>
+                </div>
+          
+                <div class="exp-detalles">
+                    <p>Me encargué del seguimiento del desarrollo de una aplicación, coordinando al equipo de desarrollo para asegurar el cumplimiento de plazos y objetivos. Colaboré con marketing en la parte visual y brindé capacitación a los empleados para facilitar la adopción del sistema. Utilicé herramientas de gestión para organizar tareas, reportar avances y mantener una comunicación fluida entre las áreas.</p>
+                </div> 
+                <div class="aptitudes-exp">
+                    <h4>Aptitudes del puesto:</h4>
+                    <div class="columnas-flex">
+                        <ul>
+                            <li>Gestión de plazos de entrega.</li>
+                            <li>Seguimiento de avances.</li>
+                            <li>Trabajo en equipo.</li>
+                            <li>Resolución de conflictos.</li>
+                        </ul>
+                        <ul>
+                            <li>Testing funcional.</li>
+                            <li>Adaptabilidad a cambios.</li>
+                            <li>Capacitación y formación de usuarios.</li>
+                            <li>Uso de herramientas de gestión.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- <div id="Cursos y Certificaciones">
-            <h1>Cursos</h1>
-            <div class="box curso"></div>
-            <div class="box curso"></div>
-        </div> -->
+        </section>
 
         <div id="Tecnologias">
             <div id="titulo-skills">
@@ -157,15 +199,15 @@
 
         <div id="Contacto">
             <h1>Contacto</h1>
-            <form class="form-contacto" onsubmit="mostrarMensaje(); return false;">
+            <form id="form-contacto" onsubmit="mostrarMensaje();">
                 <div class="box-ingreso">
-                    <input type="text" id="boxNombre" placeholder="Nombre">
+                    <input type="text"  name="nombre" id="boxNombre" placeholder="Nombre" required>
                 </div>
                 <div class="box-ingreso">
-                    <input type="email" id="boxEmail" placeholder="Email">
+                    <input type="email" name="email" id="boxEmail" placeholder="Email" required>
                 </div>
                 <div class="box-ingreso">
-                    <input type="tel" id="boxNumero" placeholder="Numero de telefono">
+                    <input type="tel" name="telefono" id="boxNumero" placeholder="Numero de telefono" required>
                 </div>
                 <div class="box-ingreso">
                     <textarea placeholder="Mensaje" name="mensaje" required></textarea>  
@@ -179,9 +221,23 @@
         </div>
     </main>
 
-    <footer>
+    <script>
+      (function(){
+        emailjs.init("QoAjvqjgSmMZ7EayV"); 
+      })();
 
-    </footer>
-
+      document.getElementById('form-contacto').addEventListener('submit', function(e) {
+        e.preventDefault();
+      
+        emailjs.sendForm('service_umbzd4w', 'template_dip1yxn', this)
+          .then(function() {
+            document.getElementById('mensaje').innerText = '¡Mensaje enviado con éxito!';
+            document.getElementById('form-contacto').reset();
+          }, function(error) {
+            document.getElementById('mensaje').innerText = 'Error al enviar. Intente nuevamente.';
+            console.log('FAILED...', error);
+          });
+      });
+    </script>
 </body>
 </html>
